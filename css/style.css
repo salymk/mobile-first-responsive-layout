@@ -8,7 +8,7 @@
 
 body {
   line-height: 1.6;
-  background: #f5f5f5;
+  background: #ffebee;
   font-family: 'Varela Round', sans-serif;
 
 }
@@ -173,6 +173,14 @@ hr {
   text-transform: uppercase;
 }
 
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+content: " ";
+display: table;
+clear: both;
+}
+
 /* =================================
   Media Queries
 ==================================== */
@@ -286,19 +294,12 @@ hr {
   .main-footer {
     padding-bottom: 20px;
   }
-  /* ---- Float clearfix ---- */
-
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
-  }
 }
 
 @media (min-width: 1024px) {
   .container {
     width: 90%;
-    max-width: 1150px;
+    max-width: 1100px;
   }
 
   .name a {
@@ -316,13 +317,13 @@ hr {
 
   .profile-img {
     float: right;
-    width: 35%;
+
     margin: 1em;
   }
 
   .intro-paragragh {
     float: left;
-    width: 55%;
+
     margin: 1em;
     padding-top: 2.5em;
     padding-left: 0;
